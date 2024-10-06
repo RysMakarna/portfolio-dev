@@ -52,6 +52,8 @@ export class SquareProjectComponent {
   }
   ];
 
+  projectReverse = this.project.reverse();
+
   currentProject: any;
 
   openModal(item: any, dialog: HTMLDialogElement){

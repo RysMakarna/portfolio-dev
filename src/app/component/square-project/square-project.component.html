@@ -1,5 +1,5 @@
 <div class="project-square">
-  @for(item of project.reverse(); track item.title){
+  @for(item of projectReverse; track item.title){
     <div class="project-element" (click)="openModal(item, dialog)">
       <div class="imgSmall">
         <img [src]="item.image" (load)="onImageLoad()" (error)="onImageError()">
