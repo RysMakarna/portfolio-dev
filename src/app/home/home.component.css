@@ -1,17 +1,103 @@
-
-.title {
-  text-align : center;
-  width: 40%;
-  margin: 0 auto;
+.Home {
+  margin-left: 10%;
+  width: 80%;
 }
 
-.project {
+.title {
+  margin-top: 8em;
+  margin-bottom: 4em;
+}
+
+.subtitle b{
+  text-align: left;
+  color: orange;
+  font-size: 1.5em;
+}
+
+.tile {
+  font-size: 6em
+}
+
+.project b{
+  text-align: left;
+  color: orange;
+  font-size: 1.5em;
+}
+
+.desc {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.project-square {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw
+}
+
+.project-element {
+  padding : 2vw;
+  box-sizing: border-box;
   text-align: center;
-  margin: 0 auto;
+  border: 0.5px solid #a9a9a92e;
 }
 
 .AM {
-  text-align: center;
-  width: 40%;
   margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.AM p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-justify: auto;
+}
+
+.AM b{
+  text-align: left;
+  color: orange;
+  font-size: 1.5em;
+}
+
+.AM button{
+  margin-top: 2em;
+  padding: 0.75em 1.5em; /* Espacement intérieur du bouton */
+  background-color: #ff8c00e6; /* Couleur de fond bleu */
+  color: #fff; /* Couleur du texte blanche */
+  border: none; /* Pas de bordure */
+  border-radius: 0.25em; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 1em; /* Taille de police du bouton */
+  display: block; /* Le bouton sera un élément de bloc */
+  margin: 0 auto;
+}
+
+.AM button:hover {
+  background-color: #ff8c0087; /* Couleur de fond au survol */
+}
+
+
+.LaF {
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 0 auto;
+  margin-bottom : 2em;
+  width: 80%;
+}
+
+.last-section {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw
+}
+
+.rest {
+  padding-left: 60%;
+}
+
+.info b {
+  color: rgba(255, 140, 0, 0.738)
 }

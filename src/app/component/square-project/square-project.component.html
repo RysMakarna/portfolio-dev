@@ -1,0 +1,26 @@
+<div class="project-square">
+  @for(item of project.reverse(); track item.title){
+    <div class="project-element" (click)="openModal(item, dialog)">
+      <div class="imgSmall">
+        <img [src]="item.image" (load)="onImageLoad()" (error)="onImageError()">
+      </div>
+      <div class="text">
+        <b>{{item.title}}</b>
+        {{item.description}}
+      </div>
+    </div>
+  }
+</div>
+
+<dialog #dialog (click)="dialog.close()">
+  <div class="modal" >
+      <div class="imgModal">
+        <img [src]="currentProject.image" alt="Image1">
+      </div>
+      <div class="modalText">
+        <b>{{currentProject.title}}</b><br>
+        {{ currentProject.descriptionL }} <br>
+        <a href="currentProject.github">Github</a>
+      </div>
+  </div>
+</dialog>

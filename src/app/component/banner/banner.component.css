@@ -1,0 +1,52 @@
+/* section.component.css */
+.container {
+  margin-top: 2em;
+  display: flex; /* Utiliser flexbox pour aligner les items horizontalement */
+  justify-content: space-between; /* Espace entre les éléments */
+  margin-bottom: 0.05em; /* Espacement en bas du conteneur */
+}
+
+.item {
+  text-align: center;
+  flex: 0 1 calc(50% - 1em); /* Chaque item prend 50% de l'espace, moins l'espacement */
+  background-color: black; /* Couleur de fond blanche */
+  color: white;
+  padding: 1em; /* Espacement intérieur */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 1em; /* Espacement entre les items (vertical) */
+  transition: transform 0.3s ease; /* Animation d'agrandissement au survol */
+}
+
+.item:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.butLine {
+  display: flex;               /* Use flexbox for layout */
+  justify-content: center;     /* Center the buttons horizontally */
+  align-items: center;         /* Align buttons vertically in the center */
+  margin: 0.5em 0;              /* Optional: add some margin for spacing */
+}
+
+button {
+  display: inline-block;
+  padding: 0.75em 1.5em; /* Espacement intérieur du bouton */
+  background-color: #ff8c00e6; /* Couleur de fond bleu */
+  color: #fff; /* Couleur du texte blanche */
+  border: none; /* Pas de bordure */
+  border-radius: 0.25em; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur */
+  font-size: 1em; /* Taille de police du bouton */
+  display: block; /* Le bouton sera un élément de bloc */
+  margin: 0 0.5em; /* Centre le bouton horizontalement */
+}
+
+button:hover {
+  background-color: #ff8c0087; /* Couleur de fond au survol */
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex: 0 1 100%; /* Sur mobile, chaque item prend 100% de la largeur */
+  }
+}

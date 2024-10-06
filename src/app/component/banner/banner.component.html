@@ -1,0 +1,24 @@
+<!-- banner.component.html -->
+<div class="container">
+      @for (item of visibleItems; track item.title) {
+    <div class="item">
+        <div class="content">
+          <!-- Ici, tu peux ajouter le contenu que tu veux dans chaque item -->
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          <img [src]="item.image" alt="Image">
+        </div>
+    </div>
+      }
+</div>
+<div class="butLine">
+  @if(currentIndex > 2){
+    <button (click)="loadLess()">Prev</button>
+  }
+
+  @if ( currentIndex < items.length){
+    <button (click)="loadMore()">Next</button>
+  }
+</div>
+
+<!--button (click)="loadLess()">Prev</button-->

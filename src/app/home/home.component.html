@@ -1,22 +1,48 @@
-  <div class="title">
-    <b><h1>Mon Portfolio</h1></b>
+<div class="Home">
+  <div class="title" style="transform: translateX(0px); opacity: 1;">
+    <div class="subtitle"><b> ━━━ Bienvenue sur mon portfolio !</b></div>
+    <div class="tile">Je suis Sébastien LOPEZ, apprenti Développeur Web</div>
+     <br>
+  </div>
 
-    Bienvenue sur mon portfolio ! <br>
-    Voici la liste de mes projets réalisé dans le but de la réussite de mes études.
+  <div class="AM">
+    <b>━━ À Propos</b>
+    <p>
+      Je suis étudiant en troisème année de Bachelor en Développement Web à Digital Campus - Paris. <br>
+      Passionné de programmation et d'innovation logicielle, je suis déterminé à entrer dans le monde du travail dans le but d'apporter ma pierre à l'édifice. <br>
+      Obtenir le plus de compétences techniques et pratiques de développement m'est indispensable pour réaliser mon but.
+    </p>
+    <button href="assets/pdf/CV_Sébastien_LOPEZ.pdf">Mon CV</button>
+
   </div>
 
   <div class="project">
-    <h2><b>Mes Projets</b></h2>
-    <app-project-1></app-project-1>
-
-    <app-project-2></app-project-2>
+    <b>━━ Mes Projets</b>
+    <div class="desc">Voici des projets réalisés au cours de mes études</div>
+    <app-square-project></app-square-project>
   </div>
 
-
-  <div class="AM">
-    <h2><b>À Propos</b></h2>
-    Bonjour! <br>
-    Je m'appelle Sébastien LOPEZ et je suis un étudiant en 3ème année de Bachelor en Développement Web. <br>
-    Je me suis centré, à travers mes projets étudiants, sur la partie back du développement, que ce soit au niveau API ou de l'optimisation du projet.
-    Cela ne m'empêche pas de posséder des connaissances en front.
+  <div class="LaF">
+    <app-banner></app-banner>
   </div>
+
+  <div class="contact">
+    <h1>Contactez-moi</h1>
+    <contact-me></contact-me>
+    <div class="last-section">
+      <div class="info">
+        <h3>Me joindre directement</h3>
+        <b>Email :</b> {{email}} <br>
+        <b>Numéro de Téléphone :</b> (+33)06 46 34 69 44 <br>
+      </div>
+      <div class="rest">
+        <h3>Restons connectés</h3>
+        <a href="https://www.linkedin.com/in/sebastienjuleslopez">LinkedIn</a>, <a href="https://github.com/SebastienJLOPEZ">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
