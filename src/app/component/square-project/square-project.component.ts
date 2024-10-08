@@ -13,14 +13,14 @@ export class SquareProjectComponent {
   }
 
   project = [{
-    image: '/assets/images/logo3.png',
+    image: 'assets/images/logo3.png',
     title: 'Lingua Bellum',
     description:'Jeu de Batailles de Rimes',
     descriptionL: 'Simple jeu de batailles de rimes.<br>Il y a des modes de jeu en plus en lien avec les syllabes.',
     github: 'https://github.com/SebastienJLOPEZ/Lingua-Bellum'
   },
   {
-    image: '/assets/images/logo2.png',
+    image: 'assets/images/logo2.png',
     title: 'Tu Zik?',
     description:"Site pour musiciens et chanteur",
     descriptionL: 'Site pour musiciens et chanteur</br>Les utilisateurs peuvent vendre leurs équipements ou communiquer entre eux.',
