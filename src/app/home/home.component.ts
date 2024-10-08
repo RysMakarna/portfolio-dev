@@ -31,6 +31,10 @@ export class HomeComponent {
   }*/
 
   email = 'lopezsebastien.pro@gmail.com';
+  pdf = "";
+  openFile() {
+    window.open("assets/pdf/CV_Sébastien_LOPEZ.pdf");
+  }
 }
 
 // TODO :

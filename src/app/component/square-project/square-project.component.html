@@ -1,26 +1,14 @@
 <div class="project-square">
-  @for(item of projectReverse; track item.title){
-    <div class="project-element" (click)="openModal(item, dialog)">
-      <div class="imgSmall">
-        <img [src]="item.image" (load)="onImageLoad()" (error)="onImageError()">
+    @for(item of project; track item.title){
+      <div class="project-element">
+        <div class="imgSmall">
+          <img [src]="item.image">
+        </div>
+        <div class="text">
+          <b>{{item.title}}</b>
+          <div [innerHTML]="item.descriptionL"></div>
+          <a [href]="item.github">Github du projet</a>
+        </div>
       </div>
-      <div class="text">
-        <b>{{item.title}}</b>
-        {{item.description}}
-      </div>
-    </div>
-  }
+    }
 </div>
-
-<dialog #dialog (click)="dialog.close()">
-  <div class="modal" >
-      <div class="imgModal">
-        <img [src]="currentProject.image" alt="Image1">
-      </div>
-      <div class="modalText">
-        <b>{{currentProject.title}}</b><br>
-        {{ currentProject.descriptionL }} <br>
-        <a href="currentProject.github">Github</a>
-      </div>
-  </div>
-</dialog>
